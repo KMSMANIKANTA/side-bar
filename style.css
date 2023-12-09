@@ -1,0 +1,57 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.sidebar{
+    width:100%;
+    position: relative;
+    transform: translate(-100%);
+    transition:1s;
+}
+.sidebar ul{
+    background-color: azure;
+    width:100%;
+    margin-top:25px
+}
+.sidebar ul li {
+    list-style: none;
+    padding: 16px;
+    display: block;
+    text-align: center;
+}
+.sidebar ul li a{
+    padding:10px;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    display: block;
+}
+.sidebar ul li a:hover{
+    background-color:rgb(181, 244, 244);
+}
+.toggle{
+    position: absolute;
+    top:6px;
+    right:15px;
+
+}
+.toggle:hover{
+    transform: scale(1.4);
+}
+.cross{
+    position: absolute;
+    top:10px;
+    right:10px;
+}
+.cross:hover{
+    transform:scale(1.4)
+}
+.active{
+    transform: translate(0);
+}
+
+@media screen and (min-width:700px){
+    .sidebar{
+        width: 40%;
+    }
+}
